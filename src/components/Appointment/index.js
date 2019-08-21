@@ -115,6 +115,3 @@ const Appointment = ({
 
 export { Header, Empty, Show, Confirm, Status, Error, Form };
 export default Appointment;
-
-export { Header, Empty, Show, Confirm, Status, Error, Form };
-export default Appointment;
