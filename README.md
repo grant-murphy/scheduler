@@ -9,12 +9,13 @@ The Scheduler client application created using Create React App. Express is the 
 !["Side panel displaying remaining times"](https://github.com/grant-murphy/scheduler/blob/master/docs/side-panel-displaying-remaining-times.png)
 
 ## Dependencies
-  axios
-  classnames
-  normalize.css
-  react
-  react-dom
-  react-scripts
+
+axios | 
+classnames |
+normalize.css |
+react |
+react-dom |
+react-scripts |
 
 ## Getting Started
 
