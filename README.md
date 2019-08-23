@@ -4,17 +4,23 @@ The Scheduler client application created using Create React App. Express is the 
 
 ## Final Product
 
-!["Full Overview of Scheduler App"](/Users/grantmurphy/lighthouse/scheduler/docs/full-overview.png)
-!["Booking time slot with interviewer"](/Users/grantmurphy/lighthouse/scheduler/docs/booking-time-with-interviewer.png)
-!["Side panel displaying remaining times"](/Users/grantmurphy/lighthouse/scheduler/docs/side-panel-displaying-remaining-times.png)
+### Full Overview of Scheduler App
+!["Full Overview of Scheduler App"](https://github.com/grant-murphy/scheduler/blob/master/docs/full-overview.png)
+
+### Booking time slot with interviewer
+!["Booking time slot with interviewer"](https://github.com/grant-murphy/scheduler/blob/master/docs/booking-time-with-interviewer.png)
+
+### Side panel displaying remaining times
+!["Side panel displaying remaining times"](https://github.com/grant-murphy/scheduler/blob/master/docs/side-panel-displaying-remaining-times.png)
 
 ## Dependencies
-		"axios": "^0.19.0",
-		"classnames": "^2.2.6",
-		"normalize.css": "^8.0.1",
-		"react": "^16.9.0-alpha.0",
-		"react-dom": "^16.9.0-alpha.0",
-		"react-scripts": "3.0.0"
+
+axios | 
+classnames |
+normalize.css |
+react |
+react-dom |
+react-scripts |
 
 ## Getting Started
 
