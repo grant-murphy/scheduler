@@ -4,8 +4,13 @@ The Scheduler client application created using Create React App. Express is the 
 
 ## Final Product
 
+###Full Overview of Scheduler App
 !["Full Overview of Scheduler App"](https://github.com/grant-murphy/scheduler/blob/master/docs/full-overview.png)
+
+###Booking time slot with interviewer
 !["Booking time slot with interviewer"](https://github.com/grant-murphy/scheduler/blob/master/docs/booking-time-with-interviewer.png)
+
+###Side panel displaying remaining times
 !["Side panel displaying remaining times"](https://github.com/grant-murphy/scheduler/blob/master/docs/side-panel-displaying-remaining-times.png)
 
 ## Dependencies
