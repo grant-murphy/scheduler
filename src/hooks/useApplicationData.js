@@ -81,8 +81,9 @@ const useApplicationData = () => {
 		});
 	}, []);
 
-	const bookInterview = (id, interview) =>
-		axios
+	const bookInterview = (id, interview) => {
+		debugger;
+		return axios
 			.put(`/api/appointments/${id}`, {
 				interview
 			})
@@ -105,31 +106,28 @@ const useApplicationData = () => {
 					});
 				}
 			});
+		}
 
 	const deleteInterview = id => {
-		return new Promise((res, rej) => {
-			axios.delete(`/api/appointments/${id}`).then(resp => {
+		return axios.delete(`/api/appointments/${id}`).then(resp => {
 				if (!resp.status === 204) {
 					console.log.error("server responded with non 2XX", resp.body);
-					rej();
-					return;
-				}
-				Promise.all([
-					axios.get("/api/days"),
-					axios.get("/api/appointments"),
-					axios.get("/api/interviewers")
-				]).then(([daysResp, appointmentsResp, interviewersResp]) => {
-					dispatch({
-						type: SET_APPLICATION_DATA,
-						days: daysResp.data,
-						appointments: appointmentsResp.data,
-						interviewers: interviewersResp.data
+				} else {
+					Promise.all([
+						axios.get("/api/days"),
+						axios.get("/api/appointments"),
+						axios.get("/api/interviewers")
+					]).then(([daysResp, appointmentsResp, interviewersResp]) => {
+						dispatch({
+							type: SET_APPLICATION_DATA,
+							days: daysResp.data,
+							appointments: appointmentsResp.data,
+							interviewers: interviewersResp.data
+						});
 					});
-				});
-				dispatch({ type: SET_INTERVIEW, id, interview: null });
-				res();
+					dispatch({ type: SET_INTERVIEW, id, interview: null });
+				}
 			});
-		});
 	};
 	return { state, setDay, bookInterview, deleteInterview };
 };
